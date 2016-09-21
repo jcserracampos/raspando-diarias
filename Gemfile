@@ -27,6 +27,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'nokogiri'
 # Utilizada para trabalhar com o HTML
 gem 'mechanize'
+# Para dar uma corzinha ao console
+gem 'colorize'
 
 
 group :development do
