@@ -1,0 +1,2 @@
+class DiariaPessoa < ApplicationRecord
+end

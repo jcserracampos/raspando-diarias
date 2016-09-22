@@ -10,9 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160922132557) do
+ActiveRecord::Schema.define(version: 20160922161935) do
 
   create_table "diaria", force: :cascade do |t|
+    t.string   "orgao_superior"
+    t.string   "orgao"
+    t.string   "unidade_gestora"
+    t.string   "favorecido"
+    t.float    "valor"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+  end
+
+  create_table "diaria_pessoas", force: :cascade do |t|
     t.string   "orgao_superior"
     t.string   "orgao"
     t.string   "unidade_gestora"

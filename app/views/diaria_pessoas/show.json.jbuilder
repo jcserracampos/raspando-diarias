@@ -1,0 +1,1 @@
+json.partial! "diaria_pessoas/diaria_pessoa", diaria_pessoa: @diaria_pessoa

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Orgao superior:</strong>
+  <%= @diaria_pessoa.orgao_superior %>
+</p>
+
+<p>
+  <strong>Orgao:</strong>
+  <%= @diaria_pessoa.orgao %>
+</p>
+
+<p>
+  <strong>Unidade gestora:</strong>
+  <%= @diaria_pessoa.unidade_gestora %>
+</p>
+
+<p>
+  <strong>Favorecido:</strong>
+  <%= @diaria_pessoa.favorecido %>
+</p>
+
+<p>
+  <strong>Valor:</strong>
+  <%= @diaria_pessoa.valor %>
+</p>
+
+<%= link_to 'Edit', edit_diaria_pessoa_path(@diaria_pessoa) %> |
+<%= link_to 'Back', diaria_pessoas_path %>

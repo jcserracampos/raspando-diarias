@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Diaria Pessoas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Orgao superior</th>
+      <th>Orgao</th>
+      <th>Unidade gestora</th>
+      <th>Favorecido</th>
+      <th>Valor</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @diaria_pessoas.each do |diaria_pessoa| %>
+      <tr>
+        <td><%= diaria_pessoa.orgao_superior %></td>
+        <td><%= diaria_pessoa.orgao %></td>
+        <td><%= diaria_pessoa.unidade_gestora %></td>
+        <td><%= diaria_pessoa.favorecido %></td>
+        <td><%= diaria_pessoa.valor %></td>
+        <td><%= link_to 'Show', diaria_pessoa %></td>
+        <td><%= link_to 'Edit', edit_diaria_pessoa_path(diaria_pessoa) %></td>
+        <td><%= link_to 'Destroy', diaria_pessoa, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Diaria Pessoa', new_diaria_pessoa_path %>
