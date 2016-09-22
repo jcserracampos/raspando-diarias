@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Orgao superior:</strong>
+  <%= @diarium.orgao_superior %>
+</p>
+
+<p>
+  <strong>Orgao:</strong>
+  <%= @diarium.orgao %>
+</p>
+
+<p>
+  <strong>Unidade gestora:</strong>
+  <%= @diarium.unidade_gestora %>
+</p>
+
+<p>
+  <strong>Favorecido:</strong>
+  <%= @diarium.favorecido %>
+</p>
+
+<p>
+  <strong>Valor:</strong>
+  <%= @diarium.valor %>
+</p>
+
+<%= link_to 'Edit', edit_diarium_path(@diarium) %> |
+<%= link_to 'Back', diaria_index_path %>

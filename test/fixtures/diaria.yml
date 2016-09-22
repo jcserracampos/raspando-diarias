@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  orgao_superior: MyString
+  orgao: MyString
+  unidade_gestora: MyString
+  favorecido: MyString
+  valor: 1.5
+
+two:
+  orgao_superior: MyString
+  orgao: MyString
+  unidade_gestora: MyString
+  favorecido: MyString
+  valor: 1.5

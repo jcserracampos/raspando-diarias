@@ -1,0 +1,42 @@
+<%= form_for(diarium) do |f| %>
+  <% if diarium.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(diarium.errors.count, "error") %> prohibited this diarium from being saved:</h2>
+
+      <ul>
+      <% diarium.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :orgao_superior %>
+    <%= f.text_field :orgao_superior %>
+  </div>
+
+  <div class="field">
+    <%= f.label :orgao %>
+    <%= f.text_field :orgao %>
+  </div>
+
+  <div class="field">
+    <%= f.label :unidade_gestora %>
+    <%= f.text_field :unidade_gestora %>
+  </div>
+
+  <div class="field">
+    <%= f.label :favorecido %>
+    <%= f.text_field :favorecido %>
+  </div>
+
+  <div class="field">
+    <%= f.label :valor %>
+    <%= f.text_field :valor %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

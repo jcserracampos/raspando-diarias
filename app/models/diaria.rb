@@ -1,0 +1,2 @@
+class Diaria < ApplicationRecord
+end
