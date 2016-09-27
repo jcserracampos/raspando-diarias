@@ -1,6 +1,6 @@
-class CreateDiariaPessoas < ActiveRecord::Migration[5.0]
+class CreateDiarias < ActiveRecord::Migration[5.0]
   def change
-    create_table :diaria_pessoas do |t|
+    create_table :diarias do |t|
       t.string :orgao_superior
       t.string :orgao
       t.string :unidade_gestora

@@ -1,2 +1,0 @@
-class DiariaPessoa < ApplicationRecord
-end

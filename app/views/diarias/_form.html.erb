@@ -1,10 +1,10 @@
-<%= form_for(diaria_pessoa) do |f| %>
-  <% if diaria_pessoa.errors.any? %>
+<%= form_for(diaria) do |f| %>
+  <% if diaria.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(diaria_pessoa.errors.count, "error") %> prohibited this diaria_pessoa from being saved:</h2>
+      <h2><%= pluralize(diaria.errors.count, "error") %> prohibited this diaria from being saved:</h2>
 
       <ul>
-      <% diaria_pessoa.errors.full_messages.each do |message| %>
+      <% diaria.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>

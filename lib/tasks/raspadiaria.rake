@@ -30,7 +30,7 @@ namespace :executivo_federal do
 
         i = 3
         while i < pagina.search("tr").count do
-          diaria = DiariaPessoa.new
+          diaria = Diaria.new
           diaria.orgao_superior = pagina.search("tr")[i].xpath("td")[0].text
           diaria.orgao = pagina.search("tr")[i].xpath("td")[1].text
           diaria.unidade_gestora = pagina.search("tr")[i].xpath("td")[2].text
