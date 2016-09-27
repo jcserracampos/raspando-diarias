@@ -11,8 +11,6 @@ namespace :executivo_federal do
     pag = 1
     pagMaxima = 2
 
-    puts 'Começando'
-
     while pag < pagMaxima do
       url = "http://www.portaldatransparencia.gov.br/PortalComprasDiretasFavorecidosDiarias.asp?Ano="+ano+"&Pagina="+pag.to_s
 
@@ -26,8 +24,6 @@ namespace :executivo_federal do
         puts "Duração: "+(Time.now-tempo_inicio).to_s+(" segundos")
         exit!
       else
-        # Aqui vai nosso código ;)
-
         # Descobrir o número da última página
         # MatchData não tem o método to_i, então precisa converter para string antes
         pagMaxima = (/(?<=\d\/)\d+/).match(pagina.css(".paginaAtual").text).to_s.to_i
@@ -47,18 +43,6 @@ namespace :executivo_federal do
 
       end
       pag = pag + 1
-
-      # Caso você queira pegar os nomes dos campos
-      # Pode ser utilizado para criar o model
-      # cabecalho = []
-      # pagina.search("tr")[2].xpath("//th").each do |th|
-        # cabecalho << th.text
-      # end
-
     end
-
-    puts "Duração: "+(Time.now-tempo_inicio).to_s+(" segundos")
-
-
   end
 end
