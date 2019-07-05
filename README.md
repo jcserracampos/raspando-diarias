@@ -1,14 +1,10 @@
-# README
+# Raspando Diárias
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Olá!
 
-Things you may want to cover:
+Tendo em vista que a Controladoria Geral da União lançou um novo portal de transparência em junho de 2018
+contemplando API, Business Inteligence e relacionamento entre entidades este projeto perdeu o sentido.
 
-* Ruby version 2.3.1
+Fico muito feliz de que não seja mais necessário utilizar um script para analisar esses dados.
 
-* System dependencies None
-
-* Database creation rails db:setup
-
-Link para a apresentação: http://slides.com/juliocampos/deck
+[Conheçam o novo portal.](https://transparencia.gov.br)

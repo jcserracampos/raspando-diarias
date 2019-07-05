@@ -1,1 +1,0 @@
-json.array! @diarias, partial: 'diarias/diaria', as: :diaria
